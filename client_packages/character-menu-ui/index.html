@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню персонажа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Меню персонажа</h1>
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+
+        <div class="menu-content">
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="clothes">Одежда</button>
+                <button class="tab-btn" data-tab="appearance">Внешность</button>
+                <button class="tab-btn" data-tab="tattoos">Татуировки</button>
+                <button class="tab-btn" data-tab="animations">Анимации</button>
+            </div>
+
+            <!-- Раздел Одежда -->
+            <div class="tab-content active" id="clothes">
+                <div class="clothes-section">
+                    <div class="clothes-item">
+                        <label>Маски</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="1" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="1" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="1" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="1" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Головные уборы</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="0" data-prop="true" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="0" data-prop="true" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="0" data-prop="true" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="0" data-prop="true" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Верхняя одежда</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="11" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="11" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="11" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="11" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Топ</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="8" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="8" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="8" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="8" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Нижняя одежда</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="4" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="4" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="4" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="4" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Обувь</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="6" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="6" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="6" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="6" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Очки</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="1" data-prop="true" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="1" data-prop="true" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="1" data-prop="true" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="1" data-prop="true" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="clothes-item">
+                        <label>Аксессуары</label>
+                        <div class="clothes-controls">
+                            <button class="nav-btn" data-component="7" data-action="prev">&lt;</button>
+                            <input type="number" class="drawable-input" data-component="7" placeholder="0" min="0">
+                            <button class="nav-btn" data-component="7" data-action="next">&gt;</button>
+                            <input type="number" class="texture-input" data-component="7" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел Внешность -->
+            <div class="tab-content" id="appearance">
+                <div class="appearance-section">
+                    <div class="appearance-item">
+                        <label>Волосы</label>
+                        <div class="skin-controls">
+                            <input type="range" id="hairSlider" min="0" max="73" value="0">
+                            <span id="hairValue">0</span>
+                        </div>
+                    </div>
+
+                    <div class="appearance-item">
+                        <label>Цвет кожи</label>
+                        <div class="skin-controls">
+                            <input type="range" id="skinColorSlider" min="0" max="11" value="0">
+                            <span id="skinColorValue">0</span>
+                        </div>
+                    </div>
+
+                    <div class="appearance-item">
+                        <label>Пол</label>
+                        <div class="gender-controls">
+                            <button class="gender-btn" data-gender="mp_m_freemode_01">Мужской</button>
+                            <button class="gender-btn" data-gender="mp_f_freemode_01">Женский</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел Татуировки -->
+            <div class="tab-content" id="tattoos">
+                <div class="tattoos-section">
+                    <div class="tattoo-zone">
+                        <label>Левая рука</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="left_arm" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="left_arm" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="left_arm" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="left_arm" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Правая рука</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="right_arm" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="right_arm" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="right_arm" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="right_arm" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Левая нога</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="left_leg" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="left_leg" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="left_leg" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="left_leg" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Правая нога</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="right_leg" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="right_leg" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="right_leg" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="right_leg" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Торс</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="torso" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="torso" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="torso" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="torso" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Спина</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="back" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="back" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="back" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="back" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+
+                    <div class="tattoo-zone">
+                        <label>Голова</label>
+                        <div class="tattoo-controls">
+                            <button class="nav-btn" data-zone="head" data-action="prev">&lt;</button>
+                            <input type="number" class="tattoo-input" data-zone="head" placeholder="0" min="0">
+                            <button class="nav-btn" data-zone="head" data-action="next">&gt;</button>
+                            <input type="number" class="tattoo-texture" data-zone="head" placeholder="Текстура" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Раздел Анимации -->
+            <div class="tab-content" id="animations">
+                <div class="animations-section">
+                    <div class="animation-group">
+                        <h3>Базовые анимации</h3>
+                        <button class="anim-btn" data-dict="mp_player_int_upperwave" data-name="mp_player_int_wave_01">Махать рукой</button>
+                        <button class="anim-btn" data-dict="mp_player_int_uppersalute" data-name="mp_player_int_salute_01">Салют</button>
+                        <button class="anim-btn" data-dict="mp_player_int_upperface" data-name="mp_player_int_face_01">Фейспалм</button>
+                        <button class="anim-btn" data-dict="mp_player_int_upperthumbs" data-name="mp_player_int_thumbs_01">Большой палец вверх</button>
+                    </div>
+
+                    <div class="animation-group">
+                        <h3>Позы</h3>
+                        <button class="anim-btn" data-dict="amb@world_human_sunbathe@male@base" data-name="base">Лежать на спине</button>
+                        <button class="anim-btn" data-dict="amb@world_human_sit_ups@male@base" data-name="base">Отжимания</button>
+                        <button class="anim-btn" data-dict="amb@world_human_yoga@male@base" data-name="base_a">Йога</button>
+                        <button class="anim-btn" data-dict="amb@world_human_hang_out_street@male_c@base" data-name="base">Расслабленная поза</button>
+                    </div>
+
+                    <div class="animation-group">
+                        <h3>Танцы</h3>
+                        <button class="anim-btn" data-dict="anim@amb@nightclub@dancers@podium_dancers@" data-name="hi_dance_facedj_17_v2_male^5">Танец 1</button>
+                        <button class="anim-btn" data-dict="anim@amb@nightclub@mini@dance@dance_solo@male@var_b@" data-name="high_center_down">Танец 2</button>
+                        <button class="anim-btn" data-dict="anim@amb@nightclub@mini@dance@dance_solo@female@var_a@" data-name="med_center_up">Танец 3</button>
+                    </div>
+
+                    <button class="stop-anim-btn">Остановить анимацию</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-footer">
+            <button class="save-btn" id="saveBtn">Сохранить</button>
+            <button class="cancel-btn" id="cancelBtn">Отмена</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
