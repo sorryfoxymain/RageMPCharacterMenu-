@@ -18,21 +18,21 @@ A comprehensive character customization system with modern web interface for Rag
 ### **Menu Sections:**
 
 #### 👕 **Clothing**
-- **Masks** - component 1 (up to 50 variants)
-- **Tops** - component 11 (up to 350 variants)
-- **Undershirts** - component 8 (up to 200 variants)
-- **Legs** - component 4 (up to 150 variants)
-- **Shoes** - component 6 (up to 100 variants)
-- **Accessories** - component 7 (up to 50 variants)
+- **Masks** - (up to 50 variants)
+- **Tops** - (up to 350 variants)
+- **Undershirts** - (up to 200 variants)
+- **Legs** - (up to 150 variants)
+- **Shoes** - (up to 100 variants)
+- **Accessories** - (up to 50 variants)
 
 #### 🎩 **Props**
-- **Hats** - prop 0 (up to 150 variants)
-- **Glasses** - prop 1 (up to 50 variants)
+- **Hats** - (up to 150 variants)
+- **Glasses** - (up to 50 variants)
 
 #### 👤 **Appearance**
-- **Hairstyles** - slider (0-73)
-- **Skin color** - slider (0-11)
-- **Character gender** - toggle (male/female)
+- **Hairstyles** - 0-73)
+- **Skin color** - (0-11)
+- **Character gender** - (male/female)
 
 #### 🖋️ **Tattoos**
 - **7 body zones**: left arm, right arm, left leg, right leg, torso, back, head
