@@ -8,11 +8,7 @@ mp.events.add('playerCommand', (player, command) => {
             // Проверяем, что игрок авторизован
             const isLoggedIn = player.getVariable('loggedIn');
             console.log(`[CharMenu] Player ${player.name} trying to use /char command. LoggedIn status: ${isLoggedIn}`);
-            
-            if (!isLoggedIn) {
-                player.outputChatBox('!{FF0000}Вы должны быть авторизованы для использования этой команды.');
-                console.log(`[CharMenu] Player ${player.name} access denied - not logged in`);
-                return;
+
             }
             
             // Вызываем клиентский event для показа меню
